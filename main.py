@@ -16,4 +16,9 @@ def svg(name):
     return static_file(name + ".svg", root=root_dir)
 
 
-run(app, host='localhost', port=8080)
+@app.route('/<name>.ttf')
+def font(name):
+    return static_file(name + ".ttf", root=root_dir)
+
+
+run(app, host='localhost', port=8080, debug=True)
