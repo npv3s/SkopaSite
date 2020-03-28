@@ -21,4 +21,4 @@ def font(name):
     return static_file(name + ".ttf", root=root_dir)
 
 
-run(app, host='localhost', port=8080, debug=True)
+run(app, host='0.0.0.0', port=8080, debug=True)

@@ -61,6 +61,23 @@
         a:hover {
             color: blue;
             border-color: blue;
+            content: url("https://github.com/npv3s") "GitHub";
+        }
+
+        a:hover span {
+            display: none;
+        }
+
+        #github:hover:before {
+            content: "github.com/npv3s";
+        }
+
+        #telegram:hover:before {
+            content: "t.me/npv3s";
+        }
+
+        #email:hover:before {
+            content: "npv3s@skopa.dev";
         }
 
         html {
@@ -81,9 +98,9 @@
         <img src="skopa_logo.svg" alt="Skopa logo"/>
         <p>Home of npv3s</p>
         <div class="raw">
-            <a class="contact">GitHub</a>
-            <a class="contact">Telegram</a>
-            <a class="contact">E-Mail</a>
+            <a class="contact" id="github" href="https://github.com/npv3s"><span>GitHub</span></a>
+            <a class="contact" id="telegram" href="https://t.me/npv3s"><span>Telegram</span></a>
+            <a class="contact" id="email" href="mailto:npv3s@skopa.dev"><span>E-Mail</span></a>
         </div>
     </div>
 </div>
