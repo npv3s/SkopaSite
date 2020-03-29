@@ -61,3 +61,15 @@ img {
     max-width: 100%;
     box-sizing: border-box;
 }
+
+#github {
+    width: 9.6em;
+}
+
+#telegram {
+    width: 6em;
+}
+
+#email {
+    width: 9em;
+}
