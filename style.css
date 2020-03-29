@@ -62,14 +62,8 @@ img {
     box-sizing: border-box;
 }
 
-#github {
-    width: 9.6em;
-}
-
-#telegram {
-    width: 6em;
-}
-
+#github,
+#telegram,
 #email {
-    width: 9em;
+    width: 9.6em;
 }
