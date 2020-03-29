@@ -33,6 +33,7 @@
     padding: 0.25em;
     text-align: center;
     margin: 0.25em;
+    width: 9.6em;
 }
 
 @font-face {
@@ -60,10 +61,4 @@ img {
     height: auto;
     max-width: 100%;
     box-sizing: border-box;
-}
-
-#github,
-#telegram,
-#email {
-    width: 9.6em;
 }
