@@ -1,5 +1,6 @@
 from bottle import Bottle, run, static_file, template
 from os.path import dirname, realpath
+import sys
 
 
 root_dir = dirname(realpath(__file__))
@@ -21,4 +22,16 @@ def font(name):
     return static_file(name + ".ttf", root=root_dir)
 
 
-run(app, host='0.0.0.0', port=8080, debug=True)
+@app.route('/style.css')
+def style():
+    return static_file("style.css", root=root_dir)
+
+
+@app.route('/script.js')
+def js():
+    return static_file("script.js", root=root_dir)
+
+
+if len(sys.argv) > 1:
+    if sys.argv[1] == 'debug':
+        run(app, host='0.0.0.0', port=8080, debug=True)
