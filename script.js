@@ -13,7 +13,7 @@ function hover(id) {
             break;
         case "telegram":
             element.innerHTML = "t.me/npv3s";
-            element.href = "https://t.me/npv3s";
+            element.href = "tg://t.me/npv3s";
             break;
         case "email":
             element.innerHTML = "npv3s@skopa.dev";
