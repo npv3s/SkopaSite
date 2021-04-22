@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>skopa.dev</title>
     <link rel="icon" type="image/svg+xml" href="/skopa_icon.svg">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.sass">
+    <script src="script.ts"></script>
 </head>
-<div class="overlay">
-    <div class="column">
-        <img src="skopa_logo.svg" alt="Skopa logo"/>
-        <p>Home of npv3s</p>
-        <div class="raw">
-            <a class="contact" id="github" href="#">GitHub</a>
-            <a class="contact" id="telegram" href="#">Telegram</a>
-            <a class="contact" id="email" href="#">E-Mail</a>
+<body>
+<section class="section">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-narrow is-flex is-flex-direction-column">
+                <canvas id="canvas" width="410" height="330"></canvas>
+                <script src="skopa.ts"></script>
+                <p class="has-text-centered">Home of npv3s</p>
+                <div class="is-flex is-flex-direction-row is-flex-wrap-wrap is-justify-content-space-around">
+                    <button class="button is-dark contact m-2" id="github">GitHub</button>
+                    <button class="button is-dark contact m-2" id="telegram">Telegram</button>
+                    <button class="button is-dark contact m-2" id="email">E-Mail</button>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>
 </body>
 </html>
